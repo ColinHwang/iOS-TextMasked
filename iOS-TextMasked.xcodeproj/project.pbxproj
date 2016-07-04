@@ -13,6 +13,9 @@
 		3BD8C43A1D2A130400F07700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD8C4381D2A130400F07700 /* Main.storyboard */; };
 		3BD8C43C1D2A130400F07700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD8C43B1D2A130400F07700 /* Assets.xcassets */; };
 		3BD8C43F1D2A130400F07700 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD8C43D1D2A130400F07700 /* LaunchScreen.storyboard */; };
+		3BD8C4491D2A132500F07700 /* NSValue+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD8C4481D2A132500F07700 /* NSValue+Add.m */; };
+		3BD8C44C1D2A133A00F07700 /* NSAttributedString+TextMasked.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD8C44B1D2A133A00F07700 /* NSAttributedString+TextMasked.m */; };
+		3BD8C44F1D2A1B8100F07700 /* CHTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD8C44E1D2A1B8100F07700 /* CHTestCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		3BD8C43B1D2A130400F07700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BD8C43E1D2A130400F07700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BD8C4401D2A130400F07700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BD8C4471D2A132500F07700 /* NSValue+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+Add.h"; sourceTree = "<group>"; };
+		3BD8C4481D2A132500F07700 /* NSValue+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+Add.m"; sourceTree = "<group>"; };
+		3BD8C44A1D2A133A00F07700 /* NSAttributedString+TextMasked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+TextMasked.h"; sourceTree = "<group>"; };
+		3BD8C44B1D2A133A00F07700 /* NSAttributedString+TextMasked.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+TextMasked.m"; sourceTree = "<group>"; };
+		3BD8C44D1D2A1B8100F07700 /* CHTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTestCell.h; sourceTree = "<group>"; };
+		3BD8C44E1D2A1B8100F07700 /* CHTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTestCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +67,13 @@
 		3BD8C42E1D2A130400F07700 /* iOS-TextMasked */ = {
 			isa = PBXGroup;
 			children = (
+				3BD8C4461D2A131B00F07700 /* TextMasked */,
 				3BD8C4321D2A130400F07700 /* AppDelegate.h */,
 				3BD8C4331D2A130400F07700 /* AppDelegate.m */,
 				3BD8C4351D2A130400F07700 /* ViewController.h */,
 				3BD8C4361D2A130400F07700 /* ViewController.m */,
+				3BD8C44D1D2A1B8100F07700 /* CHTestCell.h */,
+				3BD8C44E1D2A1B8100F07700 /* CHTestCell.m */,
 				3BD8C4381D2A130400F07700 /* Main.storyboard */,
 				3BD8C43B1D2A130400F07700 /* Assets.xcassets */,
 				3BD8C43D1D2A130400F07700 /* LaunchScreen.storyboard */,
@@ -77,6 +89,17 @@
 				3BD8C4301D2A130400F07700 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BD8C4461D2A131B00F07700 /* TextMasked */ = {
+			isa = PBXGroup;
+			children = (
+				3BD8C4471D2A132500F07700 /* NSValue+Add.h */,
+				3BD8C4481D2A132500F07700 /* NSValue+Add.m */,
+				3BD8C44A1D2A133A00F07700 /* NSAttributedString+TextMasked.h */,
+				3BD8C44B1D2A133A00F07700 /* NSAttributedString+TextMasked.m */,
+			);
+			path = TextMasked;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +174,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BD8C4371D2A130400F07700 /* ViewController.m in Sources */,
+				3BD8C44C1D2A133A00F07700 /* NSAttributedString+TextMasked.m in Sources */,
 				3BD8C4341D2A130400F07700 /* AppDelegate.m in Sources */,
+				3BD8C4491D2A132500F07700 /* NSValue+Add.m in Sources */,
+				3BD8C44F1D2A1B8100F07700 /* CHTestCell.m in Sources */,
 				3BD8C4311D2A130400F07700 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
