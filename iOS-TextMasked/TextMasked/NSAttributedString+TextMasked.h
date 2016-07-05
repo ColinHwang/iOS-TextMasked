@@ -24,12 +24,12 @@
 + (NSAttributedString *)attributedStringWithString:(NSString *)string textColor:(UIColor *)color font:(UIFont *)font maskRange:(NSRange)maskRange;
 
 /**
- *  Returns an NSAttributedString object with initial storage for a given string, attributes, masked range and masked attributes. The masked range of characters should be masked by the sepecial attributes.
+ *  Returns an NSAttributedString object with initial storage for a given string, attributes, masked range and masked attributes. The masked range of characters should be masked by the specified attributes.
  *
  *  @param string    The string for the new attributed string.
  *  @param attrs     The attributes for the new attributed string. For information about where to find the attribute keys you can include in this dictionary, see the overview section of this document.
  *  @param maskRange The range of characters to which the masked attributes apply.
- *  @param maskAttrs The masked attributes for the sepecial range of characters.
+ *  @param maskAttrs The masked attributes for the specified range of characters.
  */
 + (NSAttributedString *)attributedStringWithString:(NSString *)string attributes:(NSDictionary<NSString *, id> *)attrs maskRange:(NSRange)maskRange maskAttributes:(NSDictionary<NSString *, id> *)maskAttrs;
 
