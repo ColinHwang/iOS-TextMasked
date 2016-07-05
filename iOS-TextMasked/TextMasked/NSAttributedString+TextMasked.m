@@ -18,9 +18,7 @@
 }
 
 + (NSAttributedString *)attributedStringWithString:(NSString *)string attributes:(NSDictionary<NSString *, id> *)attrs maskRange:(NSRange)maskRange maskAttributes:(NSDictionary<NSString *, id> *)maskAttrs
-{
-    if (!string||string.length <= 0) return nil;
-    
+{    
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:string attributes:attrs];
 
     if (NSEqualRanges(maskRange, NSRangeZero)) return attributedString;
